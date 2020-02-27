@@ -11,6 +11,7 @@ def nyc_pigeon_organizer(data)
         else 
           name_hash[name] = {}
           name_hash[name][k] = []
+        end 
       }
     }
   }
