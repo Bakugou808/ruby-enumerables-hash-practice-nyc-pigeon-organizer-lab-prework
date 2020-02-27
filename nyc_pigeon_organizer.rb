@@ -6,8 +6,11 @@ def nyc_pigeon_organizer(data)
   data.each {|k,sub_hash|
     sub_hash.each {|key, arr|
       arr.each {|name|
-        #name_hash[name] = {}
-        name_hash[name][k] = []
+        if name_hash[name]
+          name_hash[name][k] = [] 
+        else 
+          name_hash[name] = {}
+          name_hash[name][k] = []
       }
     }
   }
