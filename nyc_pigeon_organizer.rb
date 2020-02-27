@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
       name_hash[name] = {color: [], gender: [], lives: []}
     }
   }
-  
+  puts name_hash
   name_hash.map {|pigeon| 
     data.map {|k, attribute| 
       attribute.map {|k, detail|
@@ -16,5 +16,5 @@ def nyc_pigeon_organizer(data)
       }
     }
   }
-  name_hash
+  puts name_hash
 end
