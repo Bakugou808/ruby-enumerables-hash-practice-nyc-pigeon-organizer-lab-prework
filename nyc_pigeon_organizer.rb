@@ -17,4 +17,5 @@ def nyc_pigeon_organizer(data)
     }
   }
   puts name_hash
+  name_hash
 end
