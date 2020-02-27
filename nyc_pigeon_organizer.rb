@@ -10,7 +10,8 @@ def nyc_pigeon_organizer(data)
   name_hash.map {|pigeon| 
     data.map {|attribute| 
       attribute.map {|detail|
-        if detail.include?()
+        if detail.include?(pigeon)
+          name_hash[pigeon][attribute] << detail
       }
     }
   }
