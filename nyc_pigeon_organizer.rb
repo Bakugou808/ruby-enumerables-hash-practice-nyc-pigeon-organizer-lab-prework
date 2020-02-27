@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   
   data[:color].each {|k,v| 
     v.each {|name| 
-      name_hash[name] = {color: [], gender: [], lives: []}
+      name_hash[name] = {:color => [], :gender => [], :lives => []}
     }
   }
   puts name_hash
