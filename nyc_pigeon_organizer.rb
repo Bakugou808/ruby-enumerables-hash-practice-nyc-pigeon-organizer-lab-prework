@@ -1,7 +1,11 @@
 def nyc_pigeon_organizer(data)
   name_hash = Hash.new()
   
-
+  data[:color].each {|k,v| 
+    v.each {|name| 
+      name_hash[name] = {:color => [], :gender => [], :lives => []}
+    }
+  }
   
   data.each {|k,sub_hash|
     sub_hash.each {|key, arr|
